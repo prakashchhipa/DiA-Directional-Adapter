@@ -32,8 +32,8 @@
 ## 📣 News
 
 <!-- TODO: fill in dates -->
-- **[2026-xx]** 🎉 DiA is accepted at **NeurIPS 2026**!
-- **[2026-xx]** Code and training configs released.
+- **[2026-09-24]** 🎉 DiA is accepted at **NeurIPS 2026**!
+- **[2026-10-05]** Code and training configs released.
 
 ## ✨ Highlights
 
