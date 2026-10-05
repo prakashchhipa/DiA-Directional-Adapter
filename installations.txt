@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# =============================================================================
+# VIFI-CLIP Environment Setup Script 
+# =============================================================================
+# This script sets up the existing vifi-clip conda environment
+
+# Configuration
+ENV_NAME="temp"
+
+echo "================================================================"
+echo "Setting up $ENV_NAME environment for MATA"
+echo "Started at: $(date)"
+echo "================================================================"
+
+# Load necessary modules
+echo "Loading required modules..."
+
+conda create -n $ENV_NAME python=3.10 -y
+conda activate $ENV_NAME
+
+# Install essential packages
+echo "Installing essential packages..."
+
+# Install PyTorch with CUDA support
+echo "Installing PyTorch..."
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Install CLIP
+echo "Installing CLIP..."
+pip install git+https://github.com/openai/CLIP.git
+
+# Install OpenCV (fix ABI compatibility)
+echo "Installing OpenCV..."
+pip install --upgrade numpy
+pip uninstall opencv-python opencv-python-headless -y 2>/dev/null || true
+pip install opencv-python-headless
+
+# Install other essential packages
+echo "Installing other packages..."
+pip install Pillow
+pip install tqdm
+pip install PyYAML
+pip install simplejson
+pip install decord
+
+# Verify installation
+echo "Verifying installation..."
+python --version
+
+echo "Testing PyTorch and CUDA..."
+python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA: {torch.cuda.is_available()}')"
+
+echo "Testing CLIP..."
+python -c "import clip; print(f'CLIP: {clip.__version__}')"
+
+echo "Testing OpenCV..."
+python -c "import cv2; import numpy as np; print(f'OpenCV: {cv2.__version__}'); print(f'NumPy: {np.__version__}')"
+
+echo "Testing other packages..."
+python -c "import PIL, tqdm, yaml, json, decord; print('All packages: OK')"
+
+echo "================================================================"
+echo "Environment setup completed successfully!"
+echo "Finished at: $(date)"
+echo "================================================================"
+
+echo ""
+echo "The $ENV_NAME environment is ready"
+
+
+pip install psutil
+pip install oss2
+pip install einops
+
+python -m pip install "setuptools<81"
+python -m pip install --no-build-isolation git+https://github.com/openai/CLIP.git
+
