@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪔 DiA: Directional Adapter
+# 🪔 DiA: Directional Adapter (NeurIPS'26)
 
 ### Fine-Grained Action Recognition with a Frozen CLIP Visual Foundation Model
 
@@ -8,7 +8,7 @@
 
 <sup>1</sup>Machine Learning Group, Luleå University of Technology &nbsp;&nbsp; <sup>2</sup>Scalable Systems, RISE Research Institutes of Sweden
 
-<sub><sup>\*</sup>Joint first authors with equal contributions</sub>
+<sup>\*</sup><i>Joint first authors with equal contributions</i>
 
 <!-- TODO: replace xxxx.xxxxx with the arXiv id, and add a project-page badge if you have one -->
 [![NeurIPS 2026](https://img.shields.io/badge/NeurIPS-2026-4b44ce?style=for-the-badge)](https://neurips.cc/)
