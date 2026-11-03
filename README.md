@@ -12,7 +12,7 @@
 
 <!-- TODO: replace xxxx.xxxxx with the arXiv id, and add a project-page badge if you have one -->
 [![NeurIPS 2026](https://img.shields.io/badge/NeurIPS-2026-4b44ce?style=for-the-badge)](https://neurips.cc/)
-[![arXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/xxxx.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.00029-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.00029)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Backbone](https://img.shields.io/badge/Backbone-CLIP_ViT--B%2F16-38c6f4?style=for-the-badge)](https://github.com/openai/CLIP)
 [![License](https://img.shields.io/badge/License-Apache_2.0-9be15d?style=for-the-badge)](LICENSE)
